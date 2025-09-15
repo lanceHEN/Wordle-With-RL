@@ -16,7 +16,6 @@ from collections import deque
 # Also periodically (every eval_and_save_per epochs) prints out and saves to tensorboard the success rate, and average number of guesses, and also saves the model.
 # This also includes a FIFO queue, used for concentrating the model on challenging words - words which take fifo_threshold or more guesses.
 # No more than fifo_percentage of the total number of guesses is set aside for words in the FIFO queue.
-# Made in part with generative AI.
 def training_loop(
     batched_env, # the batched wordle environments, as a BatchedWordleEnv
     actor_critic, # the wrapped model architecture, as a WordleActorCritic

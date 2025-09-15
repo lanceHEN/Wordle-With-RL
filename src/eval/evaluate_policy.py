@@ -5,7 +5,6 @@ import torch
 # and average guesses used.
 # It does this in batches with given batch_size to speed up computation.
 # It returns the win rate and avg_guesses, in addition to printing them.
-# Made with help of generative AI.
 def evaluate_policy_on_all_answers(env_class, guess_list, answer_list, word_encodings, actor_critic, batch_size=512):
     total_games = len(answer_list)
     total_wins = 0

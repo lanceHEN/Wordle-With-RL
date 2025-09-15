@@ -1,7 +1,6 @@
 import torch
 import torch.nn.functional as F
 
-# Made in part with generative AI.
 def ppo_update(
     actor_critic, # WordleActorCritic model
     optimizer, # optimizer

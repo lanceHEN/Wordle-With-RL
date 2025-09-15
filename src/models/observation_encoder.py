@@ -28,7 +28,6 @@ class ObservationEncoder(nn.Module):
     # all elements set to 0, to maintain constant dimensions.
     # 2. Meta tensor: a [B x 2] tensor storing the current turn and number of candidate words remaining (divided by total size of guess list) for each
     # game in the batch.
-    # Made in part with generative AI.
     def forward(self, obs_batch):
         device = next(self.parameters()).device
         batch_size = len(obs_batch)

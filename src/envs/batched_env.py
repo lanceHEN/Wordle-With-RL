@@ -2,7 +2,6 @@ from envs.wordle_env import WordleEnv
 
 # This class allows for a batch of wordle environments together, using the same reset and step methods as in WordleEnv.
 # This was done to enable quicker trajectory collection and training time.
-# Made in part with generative AI.
 class BatchedWordleEnv:
     
     # Given an environment class (e.g. WordleEnv), guess list, answer list, batch size, win reward, and lose reward,
